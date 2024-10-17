@@ -65,13 +65,11 @@ mounted() {
   color: white;
   background-color: #001529;
   text-align: center;
-  padding: 16px;
   font-size: 24px;
 }
 
 .content {
   flex: 1;
-  padding: 24px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
