@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     startMachine() {
-      this.localCountdown = 1.1 * 60; // ตั้งค่าเริ่มต้นเป็น 15 นาที (900 วินาที)
+      this.localCountdown = 5 * 60; // ตั้งค่าเริ่มต้นเป็น 5 นาที
       this.$emit('update-status', this.machineId, 'in use', this.localCountdown); // ส่งข้อมูลเพื่ออัปเดตทันที
       this.startCountdown();
     },
@@ -97,7 +97,7 @@ export default {
   },
   watch: {
     countdown(newCountdown) {
-      this.localCountdown = newCountdown; // อัปเดตค่าใหม่ในท้องถิ่นทุกครั้งที่ App.vue ส่งค่าใหม่มา
+      this.localCountdown = newCountdown;
     }
   }
 };

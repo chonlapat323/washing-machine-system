@@ -21,9 +21,9 @@ export default {
     return {
       machines: [
         { id: 1, status: 'available', countdown: 0 },
-        { id: 2, status: 'in use', countdown: 70 },
+        { id: 2, status: 'available', countdown: 0 },
         { id: 3, status: 'available', countdown: 0 },
-        { id: 4, status: 'in use', countdown: 120 }
+        { id: 4, status: 'available', countdown: 0 }
       ],
       isLoaded: false 
     };
